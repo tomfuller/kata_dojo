@@ -22,4 +22,12 @@ describe 'return fizzbuzz' do
     expect(fizzbuzz(39)).to eq 'fizz'
   end
 
+  it 'returns "buzz" when passed multiple of 5' do
+    expect(fizzbuzz(50)).to eq 'buzz'
+  end
+
+  it 'returns "fizzbuzz" when passed a multiple of 3 and 5' do
+    expect(fizzbuzz(60)).to eq 'fizzbuzz'
+  end
+
 end

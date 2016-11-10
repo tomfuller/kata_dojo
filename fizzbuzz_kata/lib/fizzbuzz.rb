@@ -7,7 +7,7 @@ def divisible_by_5?(number)
 end
 
 def divisible_by_15?(number)
-divisible_by?(number, 15)
+  divisible_by?(number, 15)
 end
 
 def divisible_by?(number, divisor)
@@ -15,8 +15,8 @@ def divisible_by?(number, divisor)
 end
 
 def fizzbuzz(number)
-  return "fizzbuzz" if divisible_by_15?(number)
-  return "fizz" if divisible_by_3?(number)
-  return "buzz" if divisible_by_5?(number)
+  return 'fizzbuzz' if divisible_by_15?(number)
+  return 'fizz' if divisible_by_3?(number)
+  return 'buzz' if divisible_by_5?(number)
   number
 end

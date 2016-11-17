@@ -14,4 +14,8 @@ describe 'Roman numerals' do
     expect(roman_numerals(3574)).to eq 'MMMDLXXIV'
   end
 
+  it 'should return a string from an array of hashes' do
+    expect(convert_hash_array_to_string([{1 => "T"},{1 => "O"},{1 => "M"},{1 => " "},{1 => "F"},{1 => "U"},{2 => "L"},{1 => "E"},{1 => "R"}])).to eq "TOM FULLER"
+  end
+
 end
